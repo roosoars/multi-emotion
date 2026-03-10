@@ -1,0 +1,5 @@
+"""Face Emotion package."""
+
+from .constants import CLASS_NAMES, CONFIDENCE_THRESHOLD, SMOOTHING_WINDOW
+
+__all__ = ["CLASS_NAMES", "CONFIDENCE_THRESHOLD", "SMOOTHING_WINDOW"]

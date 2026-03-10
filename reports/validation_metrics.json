@@ -1,0 +1,242 @@
+{
+  "created_at": "2026-03-10T00:30:11.628419+00:00",
+  "dataset_root": "/Users/rsoares/Desktop/face-emotion-main/eINTERFACE_2021_Image",
+  "feature_cache": "/Users/rsoares/Desktop/face-emotion-main/artifacts/cache/features.joblib",
+  "landmarker_model": "/Users/rsoares/Desktop/face-emotion-main/assets/face_landmarker.task",
+  "selected_model": "hist_gradient_boosting_blendshape",
+  "feature_set": "geometry_blendshape",
+  "confidence_threshold": 0.6,
+  "coverage": {
+    "train": {
+      "Anger": {
+        "total": 1896,
+        "detected": 910,
+        "discarded": 986
+      },
+      "Disgust": {
+        "total": 1891,
+        "detected": 866,
+        "discarded": 1025
+      },
+      "Fear": {
+        "total": 1922,
+        "detected": 957,
+        "discarded": 965
+      },
+      "Happiness": {
+        "total": 1922,
+        "detected": 1018,
+        "discarded": 904
+      },
+      "Sadness": {
+        "total": 1922,
+        "detected": 986,
+        "discarded": 936
+      },
+      "Surprise": {
+        "total": 1922,
+        "detected": 949,
+        "discarded": 973
+      }
+    },
+    "val": {
+      "Anger": {
+        "total": 237,
+        "detected": 108,
+        "discarded": 129
+      },
+      "Disgust": {
+        "total": 236,
+        "detected": 118,
+        "discarded": 118
+      },
+      "Fear": {
+        "total": 240,
+        "detected": 127,
+        "discarded": 113
+      },
+      "Happiness": {
+        "total": 240,
+        "detected": 136,
+        "discarded": 104
+      },
+      "Sadness": {
+        "total": 240,
+        "detected": 128,
+        "discarded": 112
+      },
+      "Surprise": {
+        "total": 240,
+        "detected": 124,
+        "discarded": 116
+      }
+    },
+    "test": {
+      "Anger": {
+        "total": 237,
+        "detected": 122,
+        "discarded": 115
+      },
+      "Disgust": {
+        "total": 237,
+        "detected": 119,
+        "discarded": 118
+      },
+      "Fear": {
+        "total": 241,
+        "detected": 115,
+        "discarded": 126
+      },
+      "Happiness": {
+        "total": 241,
+        "detected": 133,
+        "discarded": 108
+      },
+      "Sadness": {
+        "total": 241,
+        "detected": 121,
+        "discarded": 120
+      },
+      "Surprise": {
+        "total": 241,
+        "detected": 114,
+        "discarded": 127
+      }
+    }
+  },
+  "model_selection": [
+    {
+      "name": "hist_gradient_boosting_blendshape",
+      "feature_set": "geometry_blendshape",
+      "val_macro_f1": 0.5811025292473593,
+      "val_accuracy": 0.5843454790823212,
+      "val_latency_ms_per_sample": 0.5145927093735736,
+      "val_confidence_mean": 0.6808205364268548
+    },
+    {
+      "name": "random_forest_blendshape",
+      "feature_set": "geometry_blendshape",
+      "val_macro_f1": 0.5596721610838086,
+      "val_accuracy": 0.5654520917678812,
+      "val_latency_ms_per_sample": 0.38519127813287923,
+      "val_confidence_mean": 0.39345397609213406
+    },
+    {
+      "name": "logistic_regression_pca",
+      "feature_set": "dense_geometry",
+      "val_macro_f1": 0.31905481470477337,
+      "val_accuracy": 0.33468286099865047,
+      "val_latency_ms_per_sample": 0.0026536468794802204,
+      "val_confidence_mean": 0.35433094362133605
+    }
+  ],
+  "test_accuracy": 0.5883977900552486,
+  "test_macro_f1": 0.5824685703982012,
+  "classification_report": {
+    "Anger": {
+      "precision": 0.6,
+      "recall": 0.5409836065573771,
+      "f1-score": 0.5689655172413793,
+      "support": 122.0
+    },
+    "Disgust": {
+      "precision": 0.6274509803921569,
+      "recall": 0.5378151260504201,
+      "f1-score": 0.579185520361991,
+      "support": 119.0
+    },
+    "Fear": {
+      "precision": 0.5142857142857142,
+      "recall": 0.46956521739130436,
+      "f1-score": 0.4909090909090909,
+      "support": 115.0
+    },
+    "Happiness": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6766917293233082,
+      "f1-score": 0.6716417910447762,
+      "support": 133.0
+    },
+    "Sadness": {
+      "precision": 0.5849056603773585,
+      "recall": 0.768595041322314,
+      "f1-score": 0.6642857142857143,
+      "support": 121.0
+    },
+    "Surprise": {
+      "precision": 0.5221238938053098,
+      "recall": 0.5175438596491229,
+      "f1-score": 0.5198237885462555,
+      "support": 114.0
+    },
+    "accuracy": 0.5883977900552486,
+    "macro avg": {
+      "precision": 0.5859054859212011,
+      "recall": 0.5851990967156411,
+      "f1-score": 0.5824685703982012,
+      "support": 724.0
+    },
+    "weighted avg": {
+      "precision": 0.5883589769000775,
+      "recall": 0.5883977900552486,
+      "f1-score": 0.5853014599625282,
+      "support": 724.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      66,
+      11,
+      10,
+      12,
+      13,
+      10
+    ],
+    [
+      7,
+      64,
+      8,
+      10,
+      20,
+      10
+    ],
+    [
+      8,
+      13,
+      54,
+      7,
+      16,
+      17
+    ],
+    [
+      11,
+      2,
+      8,
+      90,
+      10,
+      12
+    ],
+    [
+      3,
+      6,
+      8,
+      6,
+      93,
+      5
+    ],
+    [
+      15,
+      6,
+      17,
+      10,
+      7,
+      59
+    ]
+  ],
+  "confidence_summary": {
+    "mean": 0.4448039434759269,
+    "median": 0.4189706573148,
+    "min": 0.21459266489755555,
+    "max": 0.8720609755276225
+  }
+}

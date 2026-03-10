@@ -26,3 +26,12 @@ xcuserdata/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Dataset local
+eINTERFACE_2021_Image/
+
+# Python cache
+__pycache__/
+
+# Local artifacts
+artifacts/cache/
