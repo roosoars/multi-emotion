@@ -1,4 +1,4 @@
-# Multi Emotion
+# Multimodal Emotion Recognition
 
 A real-time facial landmark detection project built with MediaPipe Face Mesh and OpenCV.
 
@@ -15,7 +15,7 @@ This repository currently implements the foundational computer vision layer for 
 For Linux/macOS
 
 ```bash
-git clone https://github.com/roosoars/multimodal-emotion-recognition.git
+git clone https://github.com/roosoars/multi-emotion.git
 cd multimodal-emotion-recognition
 python3 -m venv venv
 source venv/bin/activate
