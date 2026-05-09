@@ -16,7 +16,7 @@ For Linux/macOS
 
 ```bash
 git clone https://github.com/roosoars/multi-emotion.git
-cd multimodal-emotion-recognition
+cd multi-emotion
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
