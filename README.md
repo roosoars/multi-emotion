@@ -1,4 +1,4 @@
-# Multimodal Emotion Recognition
+# Multi Emotion
 
 A real-time facial landmark detection project built with MediaPipe Face Mesh and OpenCV.
 
